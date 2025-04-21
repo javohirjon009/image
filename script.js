@@ -45,6 +45,7 @@ function showModal(imageUrl) {
     <div class="modal_content">
       <span class="close_btn">&times;</span>
       <img src="${imageUrl}" />
+     
     </div>
   `;
   modal.style.display = "flex";
