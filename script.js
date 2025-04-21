@@ -48,9 +48,11 @@ function showModal(imageUrl) {
     </div>
   `;
   modal.style.display = "flex";
+  localStorage.setItem("image", imageUrl);
 
   document.querySelector(".close_btn").addEventListener("click", () => {
     modal.style.display = "none";
+    localStorage.removeItem("image");
   });
 
   modal.addEventListener("click", (e) => {
