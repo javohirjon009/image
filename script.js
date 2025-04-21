@@ -14,7 +14,7 @@ async function getAllImages() {
     const response = await data.json();
     showAllImages(response);
   } catch (error) {
-    console.error("Error fetching images:", error);
+    console.error(error);
   }
 }
 
